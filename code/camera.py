@@ -43,12 +43,12 @@ def get_file_name():
 def sendEmail(filename, photos):
 
     msg = MIMEMultipart()
-    TO = 'nhattanmai91@gmail.com'
+    TO = 'reciever@gmail.com'
     msg['Subject'] = "Report from Rpi"
 
     # Gmail Sign In
-    gmail_sender = 'testingcctvproject@gmail.com'
-    gmail_passwd = 'cctvproject'
+    gmail_sender = 'sender@gmail.com'
+    gmail_passwd = 'password'
 
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
